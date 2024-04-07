@@ -2,8 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import colors from '../../constants/colors';
 import twitterIcon from '../../assets/pictures/contact-twitter.png';
 import ghIcon from '../../assets/pictures/contact-gh.png';
-import inIcon from '../../assets/pictures/contact-in.png';
-import ResumeDownload from './ResumeDownload';
+import tgIcon from '../../assets/pictures/contact-tg.png';
 
 export interface ContactProps {}
 
@@ -116,15 +115,15 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <div style={styles.socials}>
                     <SocialBox
                         icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        link={'https://github.com/braindead-dev'}
                     />
                     <SocialBox
-                        icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
+                        icon={tgIcon}
+                        link={'https://t.me/henry99x'}
                     />
                     <SocialBox
                         icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        link={'https://twitter.com/henry0284928382'}
                     />
                 </div>
             </div>
@@ -138,8 +137,8 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:contact@henrywa.ng">
+                        contact@henrywa.ng
                     </a>
                 </p>
 
@@ -245,7 +244,6 @@ const Contact: React.FC<ContactProps> = (props) => {
                     </div>
                 </div>
             </div>
-            <ResumeDownload altText="Need a copy of my Resume?" />
         </div>
     );
 };
