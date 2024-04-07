@@ -2,7 +2,6 @@ import React from 'react';
 import me from '../../assets/pictures/workingAtComputer.jpg';
 import meNow from '../../assets/pictures/currentme.jpg';
 import { Link } from 'react-router-dom';
-import VideoAsset from '../general/VideoAsset';
 
 export interface AboutProps {}
 
@@ -47,7 +46,6 @@ const About: React.FC<AboutProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={saga} />
                     <div style={styles.caption}>
                         <p>
                             <sub>
@@ -122,25 +120,6 @@ const About: React.FC<AboutProps> = (props) => {
                     page, sort them by positive reactions, and then allow you to
                     traverse them from most positive reactions to least positive
                     reactions.
-                </p>
-                <br />
-                <div className="captioned-image">
-                    <VideoAsset src={scroll} />
-                    <p style={styles.caption}>
-                        <sub>
-                            <b>Figure 3:</b> Skip the Scroll in action, finding
-                            the highest rated comments and scrolling right to
-                            them
-                        </sub>
-                    </p>
-                </div>
-                <p>
-                    The extension is open source and currently released on the
-                    Chrome web store. Skip the Scroll is obviously not a project
-                    with massive scope, but was fun to make and dive into the
-                    world of browser extensions. I wanted to showcase since it's
-                    a developer tool and I wanna give it some visibility for
-                    those who might find it useful.
                 </p>
                 <br />
                 <h3>Links:</h3>
