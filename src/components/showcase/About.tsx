@@ -68,11 +68,13 @@ const About: React.FC<AboutProps> = (props) => {
                 <p>
                     <strong>Idus AI</strong> - Cyberspace management utility for regular people (in progress)
                 </p>
+
             </div>
 
             <p><strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br /></p>
             <br />
-            <p></p><strong>Telegram</strong> <span style={{ opacity: '.5' }}>–</span> <a href="https://t.me/henry99x">@henry99x</a></p>
+            <p><strong>Telegram</strong> <span style={{ opacity: '.5' }}>–</span> <a href="https://t.me/henry99x">@henry99x</a></p>
+        
         </div>
     );
 };
