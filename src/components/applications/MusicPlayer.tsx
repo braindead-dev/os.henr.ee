@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Window from '../os/Window';
-import MusicPlayer from '../general/MusicPlayer'; // Adjust the path as needed
+import MusicPlayer from '../general/MusicPlayer'; 
+
+// @ts-ignore
 import pureLove from '../../assets/audio/pure_love_hate.mp3';
 
 
@@ -18,7 +20,7 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = (props) => {
       width={700}
       height={200}
       windowTitle="Music Player"
-      windowBarIcon="windowGameIcon" // Ensure you have this icon in your assets
+      windowBarIcon="windowGameIcon" 
       windowBarColor="#240C00"
       closeWindow={props.onClose}
       onInteract={props.onInteract}
