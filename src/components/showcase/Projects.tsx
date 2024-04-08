@@ -104,7 +104,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     <p><strong>Idus AI</strong></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                        <p>GCyberspace management utility (in progress)</p>
+                        <p>Cyberspace management utility (in progress)</p>
                     </td>
                 </tr>
             </tbody>
