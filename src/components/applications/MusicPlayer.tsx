@@ -5,7 +5,6 @@ import MusicPlayer from '../general/MusicPlayer';
 // @ts-ignore
 import pureLove from '../../assets/audio/pure_love_hate.mp3';
 
-
 export interface MusicPlayerAppProps extends WindowAppProps {}
 
 
