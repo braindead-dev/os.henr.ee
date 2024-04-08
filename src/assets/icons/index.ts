@@ -18,6 +18,8 @@ import windowExplorerIcon from './windowExplorerIcon.png';
 import windowsStartIcon from './windowsStartIcon.png';
 import scrabbleIcon from './scrabbleIcon.png';
 import close from './close.png';
+import musicicon from './musicicon.png';
+import smallmusicicon from './smallmusicIcon.png';
 
 const icons = {
     windowResize: windowResize,
@@ -28,6 +30,7 @@ const icons = {
     myComputer: myComputer,
     showcaseIcon: showcaseIcon,
     doomIcon: doomIcon,
+    musicIcon: musicicon,
     volumeOn: volumeOn,
     volumeOff: volumeOff,
     credits: credits,
@@ -38,6 +41,7 @@ const icons = {
     windowExplorerIcon: windowExplorerIcon,
     windowsStartIcon: windowsStartIcon,
     trailIcon: trailIcon,
+    smallmusicicon: smallmusicicon,
 };
 
 export type IconName = keyof typeof icons;

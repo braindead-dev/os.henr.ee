@@ -11,10 +11,10 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, on
     <Window
       top={50}
       left={50}
-      width={400}
-      height={300}
+      width={600}
+      height={200}
       windowTitle="Music Player"
-      windowBarIcon="windowGameIcon" // Ensure you have this icon in your assets
+      windowBarIcon="smallmusicicon"
       closeWindow={onClose}
       onInteract={onInteract}
       minimizeWindow={onMinimize}
@@ -26,7 +26,6 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, on
         currentSong={''}
         setCurrentSong={() => {}} // Consider implementing this functionality if your app needs to manage multiple songs
       />
-    </Window>
   );
 };
 
