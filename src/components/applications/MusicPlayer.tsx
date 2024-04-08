@@ -15,6 +15,7 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, on
       height={200}
       windowTitle="Music Player"
       windowBarIcon="smallmusicicon"
+      windowBarColor="#240C00"
       closeWindow={onClose}
       onInteract={onInteract}
       minimizeWindow={onMinimize}
