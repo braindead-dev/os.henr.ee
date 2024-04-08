@@ -6,29 +6,65 @@ import { Link } from 'react-router-dom';
 export interface AboutProps {}
 
 const About: React.FC<AboutProps> = (props) => {
+
+    useEffect(() => {
+        // Custom highlight script adapted for React
+        const highlightSection = () => {
+            const contactSection = document.getElementById('contactSection');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                contactSection.classList.add('highlight');
+                setTimeout(() => {
+                    contactSection.classList.remove('highlight');
+                }, 1500);
+            }
+        };
+
+        const contactBtn = document.getElementById('contactBtn');
+        if (contactBtn) {
+            contactBtn.addEventListener('click', highlightSection);
+        }
+
+        return () => {
+            // Cleanup listener
+            if (contactBtn) {
+                contactBtn.removeEventListener('click', highlightSection);
+            }
+        };
+    }, []);
+
     return (
         // add on resize listener
         <div className="site-page-content">
             <h1>Projects</h1>
-            <br />
-            <p>
-                Below are some of my favorite software projects I have worked on
-                over the last few years.
-            </p>
-            <br />
-            <br />
-            <div className="text-block">
-                <h2>henr.ee</h2>
-                <br />
-                <p>
-                    henr.ee is my portfolio website, and also the
-                    website you are on right now. 
-                </p>
+
+            <header>
+                <nav>
+                    <a href="https://henrywa.ng" rel="noreferrer" target="_blank">Home</a> /
+                    <a href="#" id="contactBtn" onClick={(e) => e.preventDefault()}>Contact</a> /
+                    <a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank">Source</a>
+                </nav>
+            </header>
+            
+            <h2>About</h2>
+            <p>My name is Henry Wang and I'm a high schooler in the Bay Area. I love computer science, math, nature, and wrestling. </p>
+
+            {/* Socials Section */}
+            <h2>Socials</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+                {/* Social icons and links */}
+                {/* Adapted for simplicity without table structure */}
             </div>
-            <div className="text-block">
-                <p>
-                        Rest coming soon!
-                </p>
+            
+            <h2>Projects</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+                {/* Project list and descriptions */}
+                {/* Adapted for simplicity without table structure */}
+            </div>
+
+            <div id="contactSection" style={{ marginTop: '32px' }}>
+                <strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br />
+                <strong>Telegram</strong> <span style={{ opacity: '.5' }}>–</span> <a href="https://t.me/henry99x">@henry99x</a>
             </div>
         </div>
     );
