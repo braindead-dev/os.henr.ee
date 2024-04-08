@@ -22,12 +22,15 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
 
             <h2>Projects</h2>
-            <table style={{ width: '100%' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <tbody>
                 {/* SearchMe Project */}
                 <tr>
-                    <td>
-                        <p><strong>SearchMe</strong> - Personal OSINT tool for e-presence monitoring (private)</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><strong>SearchMe</strong></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Personal OSINT tool for e-presence monitoring (private)</p>
                     </td>
                 </tr>
 
