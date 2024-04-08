@@ -3,9 +3,9 @@ import me from '../../assets/pictures/workingAtComputer.jpg';
 import meNow from '../../assets/pictures/currentme.jpg';
 import { Link } from 'react-router-dom';
 
-export interface AboutProps {}
+export interface ProjectsProps {}
 
-const About: React.FC<AboutProps> = (props) => {
+const Projects: React.FC<ProjectsProps> = (props) => {
 
 
 
@@ -16,12 +16,6 @@ const About: React.FC<AboutProps> = (props) => {
 
             <br />
 
-            <h2>About</h2>
-            <p>My name is Henry Wang and I'm a high schooler in the Bay Area. I love computer science, math, nature, and wrestling. </p>
-            
-            <br />
-
-            <h2>Projects</h2>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <tbody>
                 {/* SearchMe Project */}
@@ -152,4 +146,4 @@ const styles: StyleSheetCSS = {
     },
 };
 
-export default About;
+export default Projects;

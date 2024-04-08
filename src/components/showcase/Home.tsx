@@ -20,11 +20,8 @@ const Home: React.FC<HomeProps> = (props) => {
                 <h2>Software Engineer</h2>
             </div>
             <div style={styles.buttons}>
-                <Link containerStyle={styles.link} to="about" text="PROJECTS" />
-                <Link
-                    containerStyle={styles.link}
-                    to="contact"
-                    text="CONTACT"
+                <Link containerStyle={styles.link} to="projects" text="PROJECTS" />
+                <Link containerStyle={styles.link} to="contact" text="CONTACT"
                 />
             </div>
             <div style={styles.forHireContainer} onMouseDown={goToContact}>

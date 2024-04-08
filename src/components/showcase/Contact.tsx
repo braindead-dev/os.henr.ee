@@ -25,6 +25,7 @@ const Contact: React.FC<ContactProps> = (props) => {
     return (
         <div className="site-page-content">
             <div style={styles.header}>
+                
                 <h1>Contact</h1>
                 <div style={styles.socials}>
                     <SocialBox
@@ -41,6 +42,10 @@ const Contact: React.FC<ContactProps> = (props) => {
                     />
                 </div>
             </div>
+
+            <h1>About</h1>
+            <p>My name is Henry Wang and I'm a high schooler in the Bay Area. I love computer science, math, nature, and wrestling. </p>
+
             <div className="text-block">
                 <p>
                     If you have any opportunities, feel free to reach out - I 

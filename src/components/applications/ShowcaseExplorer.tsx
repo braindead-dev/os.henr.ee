@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../showcase/Home';
-import About from '../showcase/About';
+import Projects from '../showcase/Projects';
 import Window from '../os/Window';
 import Contact from '../showcase/Contact';
 import VerticalNavbar from '../showcase/VerticalNavbar';
@@ -30,7 +30,7 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                     <VerticalNavbar />
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </div>
