@@ -36,57 +36,81 @@ const About: React.FC<AboutProps> = (props) => {
 
                 {/* GSearch Project */}
                 <tr>
-                    <td>
-                        <p><strong>GSearch</strong> - Discord self-bot with OSINT and other capabilities (private)</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><strong>GSearch</strong></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Discord self-bot with OSINT and other capabilities (private)</p>
                     </td>
                 </tr>
 
                 {/* henry.directory Project */}
                 <tr>
-                    <td>
-                        <p><strong>henry.directory</strong> - Archive of publicly leaked data (retired)</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><strong>henry.directory</strong></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Archive of publicly leaked data (retired)</p>
                     </td>
                 </tr>
 
                 {/* DShop Helper Project */}
                 <tr>
-                    <td>
-                        <p><a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><strong>DShop Helper</strong></a> - Discord bot that assists digital product store owners and fights spam</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><strong><a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><strong>DShop Helper</strong></a></strong></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Discord bot that assists digital product store owners and fights spam</p>
                     </td>
                 </tr>
 
                 {/* Cashbot Project */}
                 <tr>
-                    <td>
-                        <p><a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><strong>Cashbot</strong></a> - Discord bot that handles Cash App as a payment gateway</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><strong>Cashbot</strong></a></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Discord bot that handles Cash App as a payment gateway</p>
                     </td>
                 </tr>
 
                 {/* FilePump Project */}
                 <tr>
-                    <td>
-                        <p><a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><strong>FilePump</strong></a> - Lightweight .exe file size bloater for whitehat testing purposes</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                    <p><a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><strong>FilePump</strong></a></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Lightweight .exe file size bloater for whitehat testing purposes</p>
                     </td>
                 </tr>
 
                 {/* Personal Site Project */}
                 <tr>
-                    <td>
-                        <p><a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><strong>Personal Site</strong></a> - Simple website displaying some info about myself</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                    <p><a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><strong>Personal Site</strong></a></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Simple website displaying some info about myself</p>
                     </td>
                 </tr>
 
                 {/* Google Calendar Project */}
                 <tr>
-                    <td>
-                        <p><a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><strong>Google Calendar</strong></a> - Google Calendar app for Windows, made with Electron</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                    <p><a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><strong>Google Calendar</strong></a></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Google Calendar app for Windows, made with Electron</p>
                     </td>
                 </tr>
 
                 {/* Idus AI Project */}
                 <tr>
-                    <td>
-                        <p><strong>Idus AI</strong> - Cyberspace management utility for regular people (in progress)</p>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                    <p><strong>Idus AI</strong></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>GCyberspace management utility (in progress)</p>
                     </td>
                 </tr>
             </tbody>
