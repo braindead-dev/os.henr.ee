@@ -71,8 +71,8 @@ const About: React.FC<AboutProps> = (props) => {
 
             </div>
 
-            <p><strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br /></p>
             <br />
+            <p><strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br /></p>
             <p><strong>Telegram</strong> <span style={{ opacity: '.5' }}>–</span> <a href="https://t.me/henry99x">@henry99x</a></p>
         
         </div>
