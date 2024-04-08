@@ -22,54 +22,73 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
 
             <h2>Projects</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
-
+            <table style={{ width: '100%' }}>
+            <tbody>
                 {/* SearchMe Project */}
-                <p>
-                    <strong>SearchMe</strong> - Personal OSINT tool for e-presence monitoring (private)
-                </p>
+                <tr>
+                    <td>
+                        <p><strong>SearchMe</strong> - Personal OSINT tool for e-presence monitoring (private)</p>
+                    </td>
+                </tr>
 
                 {/* GSearch Project */}
-                <p>
-                    <strong>GSearch</strong> - Discord self-bot with OSINT and other capabilities (private)
-                </p>
+                <tr>
+                    <td>
+                        <p><strong>GSearch</strong> - Discord self-bot with OSINT and other capabilities (private)</p>
+                    </td>
+                </tr>
 
                 {/* henry.directory Project */}
-                <p>
-                    <strong>henry.directory</strong> - Archive of publicly leaked data (retired)
-                </p>
+                <tr>
+                    <td>
+                        <p><strong>henry.directory</strong> - Archive of publicly leaked data (retired)</p>
+                    </td>
+                </tr>
 
                 {/* DShop Helper Project */}
-                <p>
-                    <a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><strong>DShop Helper</strong></a> - Discord bot that assists digital product store owners and fights spam
-                </p>
+                <tr>
+                    <td>
+                        <p><a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><strong>DShop Helper</strong></a> - Discord bot that assists digital product store owners and fights spam</p>
+                    </td>
+                </tr>
 
                 {/* Cashbot Project */}
-                <p>
-                    <a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><strong>Cashbot</strong></a> - Discord bot that handles Cash App as a payment gateway
-                </p>
+                <tr>
+                    <td>
+                        <p><a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><strong>Cashbot</strong></a> - Discord bot that handles Cash App as a payment gateway</p>
+                    </td>
+                </tr>
 
                 {/* FilePump Project */}
-                <p>
-                    <a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><strong>FilePump</strong></a> - Lightweight .exe file size bloater for whitehat testing purposes
-                </p>
+                <tr>
+                    <td>
+                        <p><a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><strong>FilePump</strong></a> - Lightweight .exe file size bloater for whitehat testing purposes</p>
+                    </td>
+                </tr>
 
                 {/* Personal Site Project */}
-                <p>
-                    <a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><strong>Personal Site</strong></a> - Simple website displaying some info about myself
-                </p>
+                <tr>
+                    <td>
+                        <p><a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><strong>Personal Site</strong></a> - Simple website displaying some info about myself</p>
+                    </td>
+                </tr>
 
                 {/* Google Calendar Project */}
-                <p>
-                    <a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><strong>Google Calendar</strong></a> - Google Calendar app for Windows, made with Electron
-                </p>
+                <tr>
+                    <td>
+                        <p><a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><strong>Google Calendar</strong></a> - Google Calendar app for Windows, made with Electron</p>
+                    </td>
+                </tr>
 
                 {/* Idus AI Project */}
-                <p>
-                    <strong>Idus AI</strong> - Cyberspace management utility for regular people (in progress)
-                </p>
+                <tr>
+                    <td>
+                        <p><strong>Idus AI</strong> - Cyberspace management utility for regular people (in progress)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-            </div>
 
             <br />
             <p><strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br /></p>
