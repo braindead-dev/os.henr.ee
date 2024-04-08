@@ -38,7 +38,7 @@ const APPLICATIONS: {
     },
     musicPlayer: {
         key: 'musicPlayer',
-        name: 'Music Player',
+        name: 'Music',
         shortcutIcon: 'musicIcon',
         component: MusicPlayerApp,
     },
