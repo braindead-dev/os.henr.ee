@@ -20,8 +20,8 @@ const MusicPlayerApp = ({ onClose, onInteract, onMinimize }) => {
     >
       <MusicPlayer
         src={musicSrc}
-        title="Song Title"
-        subtitle="Artist Name"
+        title="Pure Love - Hate"
+        subtitle="LUCKI"
         currentSong={''}
         setCurrentSong={() => {}} // Implement functionality if needed
       />
