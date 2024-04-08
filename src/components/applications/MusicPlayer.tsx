@@ -11,8 +11,8 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, on
     <Window
       top={50}
       left={50}
-      width={400}
-      height={300}
+      width={500}
+      height={200}
       windowTitle="Music Player"
       windowBarIcon="windowGameIcon" // Ensure you have this icon in your assets
       windowBarColor="#240C00"
