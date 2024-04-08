@@ -1,11 +1,12 @@
 import React from 'react';
 import Window from '../os/Window';
-import MusicPlayer from './MusicPlayer'; // Adjust the path as needed
+import MusicPlayer from '../general/MusicPlayer'; // Adjust the path as needed
 
-// Dummy music source for demonstration
+export interface MusicPlayerAppProps extends WindowAppProps {}
+
 const musicSrc = '.../assets/audio/pure_love_hate.mp3';
 
-const MusicPlayerApp = ({ onClose, onInteract, onMinimize }) => {
+const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, onMinimize }) => {
   return (
     <Window
       top={50}
@@ -13,7 +14,7 @@ const MusicPlayerApp = ({ onClose, onInteract, onMinimize }) => {
       width={400}
       height={300}
       windowTitle="Music Player"
-      windowBarIcon="musicPlayerIcon" // Add this icon to your assets
+      windowBarIcon="musicPlayerIcon" // Ensure you have this icon in your assets
       closeWindow={onClose}
       onInteract={onInteract}
       minimizeWindow={onMinimize}
@@ -23,7 +24,7 @@ const MusicPlayerApp = ({ onClose, onInteract, onMinimize }) => {
         title="Pure Love - Hate"
         subtitle="LUCKI"
         currentSong={''}
-        setCurrentSong={() => {}} // Implement functionality if needed
+        setCurrentSong={() => {}} // Consider implementing this functionality if your app needs to manage multiple songs
       />
     </Window>
   );
