@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Window from '../os/Window';
 import MusicPlayer from '../general/MusicPlayer'; // Adjust the path as needed
-import pureLove from '../../assets/audio/pure_love_hate.mp3';
+import pureLove from '../../../assets/audio/pure_love_hate.mp3';
 
 
 export interface MusicPlayerAppProps extends WindowAppProps {}
