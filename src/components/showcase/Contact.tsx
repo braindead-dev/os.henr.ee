@@ -49,21 +49,59 @@ const Contact: React.FC<ContactProps> = (props) => {
             
             <br />
             
-            <p>
-                Reach me at:
-            </p>
-            <p>
-                <b>Email: </b>
-                <a href="mailto:contact@henrywa.ng">
-                    contact@henrywa.ng
-                </a>
-            </p>
-            <p>
-                <b>Telegram: </b>
-                <a href="https://t.me/henry99x">
-                    @henry99x
-                </a>
-            </p>
+            <h2>Socials</h2>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <tbody>
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><b>Insta</b></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <a href="https://instagram.com/b0i" rel="noreferrer" target="_blank"><p>@b0i</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><b>Twitter</b></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <a href="https://twitter.com/henry0284928382" rel="noreferrer" target="_blank"><p>@henry0284928382</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><b>Github</b></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <a href="https://github.com/braindead-dev" rel="noreferrer" target="_blank"><p>@braindead-dev</p></a>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+
+            <br />
+
+            <h2>Contact</h2>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <tbody>
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><b>Email</b></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <a href="mailto:contact@henrywa.ng"><p>contact@henrywa.ng</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p><b>Telegram</b></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <a href="https://t.me/henry99x" rel="noreferrer" target="_blank"><p>@henry99x</p></a>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
         </div>
     );
 };

@@ -21,7 +21,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* SearchMe Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                        <p><strong>SearchMe</strong></p>
+                        <p><b>SearchMe</b></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Personal OSINT tool for e-presence monitoring (private)</p>
@@ -31,7 +31,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* GSearch Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                        <p><strong>GSearch</strong></p>
+                        <p><b>GSearch</b></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Discord self-bot with OSINT and other capabilities (private)</p>
@@ -41,7 +41,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* henry.directory Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                        <p><strong>henry.directory</strong></p>
+                        <p><b>henry.directory</b></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Archive of publicly leaked data (retired)</p>
@@ -51,7 +51,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* DShop Helper Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                        <p><strong><a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><strong>DShop Helper</strong></a></strong></p>
+                        <p><b><a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><b>DShop Helper</b></a></b></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Discord bot that assists digital product store owners and fights spam</p>
@@ -61,7 +61,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* Cashbot Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                        <p><a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><strong>Cashbot</strong></a></p>
+                        <p><a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><b>Cashbot</b></a></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Discord bot that handles Cash App as a payment gateway</p>
@@ -71,7 +71,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* FilePump Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                    <p><a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><strong>FilePump</strong></a></p>
+                    <p><a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><b>FilePump</b></a></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Lightweight .exe file size bloater for whitehat testing purposes</p>
@@ -81,7 +81,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* Personal Site Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                    <p><a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><strong>Personal Site</strong></a></p>
+                    <p><a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><b>Personal Site</b></a></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Simple website displaying some info about myself</p>
@@ -91,7 +91,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* Google Calendar Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                    <p><a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><strong>Google Calendar</strong></a></p>
+                    <p><a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><b>Google Calendar</b></a></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Google Calendar app for Windows, made with Electron</p>
@@ -101,19 +101,19 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 {/* Idus AI Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
-                    <p><strong>Idus AI</strong></p>
+                    <p><b>Idus AI</b></p>
                     </td>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
                         <p>Cyberspace management utility (in progress)</p>
                     </td>
                 </tr>
             </tbody>
-        </table>
+            </table>
 
 
             <br />
-            <p><strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br /></p>
-            <p><strong>Telegram</strong> <span style={{ opacity: '.5' }}>–</span> <a href="https://t.me/henry99x">@henry99x</a></p>
+            <p><b>Email</b> <span style={{ opacity: '.5' }}>–</span> contact@henrywa.ng<br /></p>
+            <p><b>Telegram</b> <span style={{ opacity: '.5' }}>–</span> <a href="https://t.me/henry99x">@henry99x</a></p>
         
         </div>
     );
