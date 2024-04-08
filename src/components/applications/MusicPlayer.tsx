@@ -20,9 +20,9 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = (props) => {
       windowTitle="Music Player"
       windowBarIcon="windowGameIcon" // Ensure you have this icon in your assets
       windowBarColor="#240C00"
-      closeWindow={onClose}
-      onInteract={onInteract}
-      minimizeWindow={onMinimize}
+      closeWindow={props.onClose}
+      onInteract={props.onInteract}
+      minimizeWindow={props.onMinimize}
     >
       <MusicPlayer
         src={pureLove}
