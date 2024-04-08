@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Window from '../os/Window';
 import MusicPlayer from '../general/MusicPlayer'; // Adjust the path as needed
+import dnbDrums from '../../assets/audio/pure_love_hate.mp3';
+
 
 export interface MusicPlayerAppProps extends WindowAppProps {}
 
@@ -8,7 +10,6 @@ export interface MusicPlayerAppProps extends WindowAppProps {}
 const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, onMinimize }) => {
   
   const [currentSong, setCurrentSong] = useState<string>('');
-  const musicSrc = '../../assets/audio/pure_love_hate.mp3';
 
   return (
     <Window
@@ -28,10 +29,12 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, on
         title="Pure Love - Hate"
         subtitle="LUCKI"
         currentSong={currentSong}
-        setCurrentSong={setCurrentSong} // Consider implementing this functionality if your app needs to manage multiple songs
+        setCurrentSong={setCurrentSong} 
       />
     </Window>
   );
 };
 
-export default MusicPlayerApp;
+
+
+
