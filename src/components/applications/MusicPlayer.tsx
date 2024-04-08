@@ -24,8 +24,9 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, on
         title="Pure Love - Hate"
         subtitle="LUCKI"
         currentSong={''}
-        setCurrentSong={() => {}} // Consider implementing this functionality if your app needs to manage multiple songs
+        setCurrentSong={() => {}}
       />
+    </Window>
   );
 };
 
