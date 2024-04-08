@@ -12,15 +12,17 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = (props) => {
   
   const [currentSong, setCurrentSong] = useState<string>('');
 
+  const songTitle = 'Pure Love - Hate';
+  const artist = 'LUCKI';
+
   return (
     <Window
       top={50}
       left={50}
       width={700}
       height={175}
-      windowTitle="Music Player"
+      windowTitle={`Music Player - ${songTitle} by ${artist}`}
       windowBarIcon="windowGameIcon" 
-      windowBarColor="#058599"
       rainbow={true}
       closeWindow={props.onClose}
       onInteract={props.onInteract}
@@ -28,8 +30,8 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = (props) => {
     >
       <MusicPlayer
         src={pureLove}
-        title="Pure Love - Hate"
-        subtitle="LUCKI"
+        title={songTitle}
+        subtitle={artist}
         currentSong={currentSong}
         setCurrentSong={setCurrentSong} 
       />
