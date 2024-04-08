@@ -1,4 +1,5 @@
 import React from 'react';
+import React, { useEffect } from 'react';
 import me from '../../assets/pictures/workingAtComputer.jpg';
 import meNow from '../../assets/pictures/currentme.jpg';
 import { Link } from 'react-router-dom';
