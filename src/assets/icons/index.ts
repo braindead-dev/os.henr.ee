@@ -18,7 +18,7 @@ import windowExplorerIcon from './windowExplorerIcon.png';
 import windowsStartIcon from './windowsStartIcon.png';
 import scrabbleIcon from './scrabbleIcon.png';
 import close from './close.png';
-import musicIcon from './musicIcon.png';
+import musicIcon from './musicicon.png';
 
 const icons = {
     windowResize: windowResize,
