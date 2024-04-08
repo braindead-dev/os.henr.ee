@@ -20,7 +20,7 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = (props) => {
       height={175}
       windowTitle="Music Player"
       windowBarIcon="windowGameIcon" 
-      windowBarColor="#94FAFF"
+      windowBarColor="#058599"
       rainbow=true
       closeWindow={props.onClose}
       onInteract={props.onInteract}
