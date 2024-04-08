@@ -4,7 +4,7 @@ import MusicPlayer from '../general/MusicPlayer'; // Adjust the path as needed
 
 export interface MusicPlayerAppProps extends WindowAppProps {}
 
-const musicSrc = '.../assets/audio/pure_love_hate.mp3';
+const musicSrc = '../../assets/audio/pure_love_hate.mp3';
 
 const MusicPlayerApp: React.FC<MusicPlayerAppProps> = ({ onClose, onInteract, onMinimize }) => {
   return (
