@@ -6,6 +6,7 @@ import OregonTrail from '../applications/OregonTrail';
 import ShutdownSequence from './ShutdownSequence';
 // import ThisComputer from '../applications/ThisComputer';
 import Henordle from '../applications/Henordle';
+import MusicPlayerApp from '../applications/Music';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import Scrabble from '../applications/Scrabble';
@@ -34,6 +35,12 @@ const APPLICATIONS: {
         name: 'My Showcase',
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
+    },
+    musicPlayer: {
+        key: 'musicPlayer',
+        name: 'Music Player',
+        shortcutIcon: 'showcaseIcon',
+        component: MusicPlayerApp,
     },
     trail: {
         key: 'trail',
