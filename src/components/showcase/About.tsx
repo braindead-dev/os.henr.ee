@@ -41,26 +41,61 @@ const About: React.FC<AboutProps> = (props) => {
             <header>
                 <nav>
                     <a href="https://henrywa.ng" rel="noreferrer" target="_blank">Home</a> /
-                    <a href="#" id="contactBtn" onClick={(e) => e.preventDefault()}>Contact</a> /
-                    <a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank">Source</a>
+                    <a href="#" id="contactBtn" onClick={(e) => e.preventDefault()}>Contact</a> 
                 </nav>
             </header>
             
             <h2>About</h2>
             <p>My name is Henry Wang and I'm a high schooler in the Bay Area. I love computer science, math, nature, and wrestling. </p>
-
-            {/* Socials Section */}
-            <h2>Socials</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
-                {/* Social icons and links */}
-                {/* Adapted for simplicity without table structure */}
-            </div>
             
             <h2>Projects</h2>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
-                {/* Project list and descriptions */}
-                {/* Adapted for simplicity without table structure */}
+                {/* SearchMe Project */}
+                <div>
+                    <strong>SearchMe</strong> - Personal OSINT tool for e-presence monitoring (private)
+                </div>
+
+                {/* GSearch Project */}
+                <div>
+                    <strong>GSearch</strong> - Discord self-bot with OSINT and other capabilities (private)
+                </div>
+
+                {/* henry.directory Project */}
+                <div>
+                    <strong>henry.directory</strong> - Archive of publicly leaked data (retired)
+                </div>
+
+                {/* DShop Helper Project */}
+                <div>
+                    <a href="https://github.com/braindead-dev/discord-shop-helper" rel="noreferrer" target="_blank"><strong>DShop Helper</strong></a> - Discord bot that assists digital product store owners and fights spam
+                </div>
+
+                {/* Cashbot Project */}
+                <div>
+                    <a href="https://github.com/braindead-dev/CashBot" rel="noreferrer" target="_blank"><strong>Cashbot</strong></a> - Discord bot that handles Cash App as a payment gateway
+                </div>
+
+                {/* FilePump Project */}
+                <div>
+                    <a href="https://github.com/braindead-dev/FilePump" rel="noreferrer" target="_blank"><strong>FilePump</strong></a> - Lightweight .exe file size bloater for whitehat testing purposes
+                </div>
+
+                {/* Personal Site Project */}
+                <div>
+                    <a href="https://github.com/braindead-dev/henrywa.ng" rel="noreferrer" target="_blank"><strong>Personal Site</strong></a> - Simple website displaying some info about myself
+                </div>
+
+                {/* Google Calendar Project */}
+                <div>
+                    <a href="https://github.com/braindead-dev/google-calendar-app" rel="noreferrer" target="_blank"><strong>Google Calendar</strong></a> - Google Calendar app for Windows, made with Electron
+                </div>
+
+                {/* Idus AI Project */}
+                <div>
+                    <strong>Idus AI</strong> - Cyberspace management utility for regular people (in progress)
+                </div>
             </div>
+
 
             <div id="contactSection" style={{ marginTop: '32px' }}>
                 <strong>Email</strong> <span style={{ opacity: '.5' }}>–</span> contact@henrywa[.]ng<br />
