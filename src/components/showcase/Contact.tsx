@@ -43,22 +43,24 @@ const Contact: React.FC<ContactProps> = (props) => {
                 </div>
             </div>
 
-            <h1>About</h1>
-            <p>My name is Henry Wang and I'm a high schooler in the Bay Area. I love computer science, math, nature, and wrestling. </p>
+            <p>Thanks for visiting my site. My name is Henry Wang and I'm a high schooler in the Bay Area. I love computer science, math, nature, and wrestling. </p>
 
-            <div className="text-block">
-                <p>
-                    If you have any opportunities, feel free to reach out - I 
-                    would love to chat! You can reach me via my personal email!
-                </p>
-                <br />
-                <p>
-                    <b>Email: </b>
-                    <a href="mailto:contact@henrywa.ng">
-                        contact@henrywa.ng
-                    </a>
-                </p>
-            </div>
+            <p>
+                Reach me at:
+            </p>
+            <br />
+            <p>
+                <b>Email: </b>
+                <a href="mailto:contact@henrywa.ng">
+                    contact@henrywa.ng
+                </a>
+            </p>
+            <p>
+                <b>Telegram: </b>
+                <a href="https://t.me/henry99x">
+                    @henry99x
+                </a>
+            </p>
         </div>
     );
 };
