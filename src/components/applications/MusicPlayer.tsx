@@ -35,6 +35,4 @@ const MusicPlayerApp: React.FC<MusicPlayerAppProps> = (props) => {
   );
 };
 
-
-
-
+export default MusicPlayerApp;
