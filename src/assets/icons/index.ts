@@ -7,6 +7,7 @@ import computerBig from './computerBig.png';
 import computerSmall from './computerSmall.png';
 import myComputer from './myComputer.png';
 import showcaseIcon from './showcaseIcon.png';
+import musicIcon from './musicIcon.png';
 import doomIcon from './doomIcon.png';
 import henordleIcon from './henordleIcon.png';
 import credits from './credits.png';
@@ -28,6 +29,7 @@ const icons = {
     computerSmall: computerSmall,
     myComputer: myComputer,
     showcaseIcon: showcaseIcon,
+    musicIcon: musicIcon,
     doomIcon: doomIcon,
     volumeOn: volumeOn,
     volumeOff: volumeOff,
