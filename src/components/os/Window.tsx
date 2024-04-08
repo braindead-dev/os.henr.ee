@@ -408,7 +408,7 @@ const styles: StyleSheetCSS = {
         cursor: 'nwse-resize',
     },
     topBar: {
-        backgroundColor: Colors.blue,
+        backgroundColor: "#7D4698",
         width: '100%',
         height: 20,
 
