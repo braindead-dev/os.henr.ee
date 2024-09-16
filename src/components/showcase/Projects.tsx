@@ -98,6 +98,16 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     </td>
                 </tr>
 
+                {/* VSCO Clone Project */}
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                    <p><a href="https://github.com/braindead-dev/VSCO-gallery-clone" rel="noreferrer" target="_blank"><b>VSCO Clone</b></a></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>Lightweight mobile VSCO clone, login-free gallery viewing</p>
+                    </td>
+                </tr>
+
                 {/* Idus AI Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
