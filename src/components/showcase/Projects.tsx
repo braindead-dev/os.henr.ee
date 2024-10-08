@@ -108,6 +108,16 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     </td>
                 </tr>
 
+                {/* Markdown Pastebin Project */}
+                <tr>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                    <p><a href="https://notes.henr.ee/" rel="noreferrer" target="_blank"><b>notes.henr.ee</b></a></p>
+                    </td>
+                    <td style={{ border: '1px solid black', padding: '8px' }}>
+                        <p>An elegant markdown-pastebin I built to share class notes.</p>
+                    </td>
+                </tr>
+
                 {/* Idus AI Project */}
                 <tr>
                     <td style={{ border: '1px solid black', padding: '8px' }}>
