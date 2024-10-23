@@ -287,7 +287,7 @@ const Wordle: React.FC<WordleProps> = () => {
                 )}
             >
                 <h2>{won ? 'You win!' : 'Game Over'}</h2>
-                <p>Thanks for playing! Remember: the word is always "HENRY"!</p>
+                <p>Thanks for playing! I hope you live a long and prosperous life!</p>
                 <br />
                 <GuessWord
                     key={'winning-guess'}
