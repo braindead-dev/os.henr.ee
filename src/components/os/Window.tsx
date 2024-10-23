@@ -22,9 +22,15 @@ export interface WindowProps {
     windowBarIcon?: IconName;
     onWidthChange?: (width: number) => void;
     onHeightChange?: (height: number) => void;
+    resizable?: boolean; // New prop to control resizing
+    showMaximizeButton?: boolean; // New prop to control maximize button visibility
 }
 
-const Window: React.FC<WindowProps> = (props) => {
+const Window: React.FC<WindowProps> = ({
+    resizable = true,
+    showMaximizeButton = true,
+    ...props
+}) => {
     const windowRef = useRef<any>(null);
     const dragRef = useRef<any>(null);
     const contentRef = useRef<any>(null);
@@ -61,6 +67,7 @@ const Window: React.FC<WindowProps> = (props) => {
     const [isResizing, setIsResizing] = useState(false);
 
     const startResize = (event: any) => {
+        if (!resizable) return; // Prevent resizing if not resizable
         event.preventDefault();
         setIsResizing(true);
         window.addEventListener('mousemove', onResize, false);
@@ -104,7 +111,6 @@ const Window: React.FC<WindowProps> = (props) => {
 
     const stopDrag = ({ clientX, clientY }: any) => {
         setIsDragging(false);
-        // dragRef.current.style.opacity = 0;
         const { x, y } = getXYFromDragProps(clientX, clientY);
         setTop(y);
         setLeft(x);
@@ -249,7 +255,12 @@ const Window: React.FC<WindowProps> = (props) => {
                                     icon="minimize"
                                     onClick={props.minimizeWindow}
                                 />
-                                <Button icon="maximize" onClick={maximize} />
+                                {showMaximizeButton && (
+                                    <Button
+                                        icon="maximize"
+                                        onClick={maximize}
+                                    />
+                                )}
                                 <div style={{ paddingLeft: 2 }}>
                                     <Button
                                         icon="close"
@@ -258,27 +269,32 @@ const Window: React.FC<WindowProps> = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            style={Object.assign({}, styles.contentOuter, {
-                                // zIndex: isDragging || isResizing ? 0 : 100,
-                            })}
-                        >
+                        <div style={Object.assign({}, styles.contentOuter)}>
                             <div style={styles.contentInner}>
-                                <div style={styles.content} ref={contentRef}>
+                                <div
+                                    style={styles.content}
+                                    ref={contentRef}
+                                >
                                     {props.children}
                                 </div>
                             </div>
                         </div>
-                        <div
-                            onMouseDown={startResize}
-                            style={styles.resizeHitbox}
-                        ></div>
+                        {resizable && (
+                            <div
+                                onMouseDown={startResize}
+                                style={styles.resizeHitbox}
+                            ></div>
+                        )}
                         <div style={styles.bottomBar}>
                             <div
-                                style={Object.assign({}, styles.insetBorder, {
-                                    flex: 5 / 7,
-                                    alignItems: 'center',
-                                })}
+                                style={Object.assign(
+                                    {},
+                                    styles.insetBorder,
+                                    {
+                                        flex: 5 / 7,
+                                        alignItems: 'center',
+                                    }
+                                )}
                             >
                                 <p
                                     style={{
@@ -324,28 +340,30 @@ const Window: React.FC<WindowProps> = (props) => {
                 </div>
             </div>
 
-            <div
-                style={
-                    !isResizing
-                        ? {
-                              zIndex: -10000,
-                              pointerEvents: 'none',
-                          }
-                        : {
-                              zIndex: 1000,
-                              cursor: 'nwse-resize',
-                              mixBlendMode: 'difference',
-                          }
-                }
-            >
-                <ResizeIndicator
-                    top={top}
-                    left={left}
-                    width={width}
-                    height={height}
-                    resizeRef={resizeRef}
-                />
-            </div>
+            {resizable && (
+                <div
+                    style={
+                        !isResizing
+                            ? {
+                                  zIndex: -10000,
+                                  pointerEvents: 'none',
+                              }
+                            : {
+                                  zIndex: 1000,
+                                  cursor: 'nwse-resize',
+                                  mixBlendMode: 'difference',
+                              }
+                    }
+                >
+                    <ResizeIndicator
+                        top={top}
+                        left={left}
+                        width={width}
+                        height={height}
+                        resizeRef={resizeRef}
+                    />
+                </div>
+            )}
             <div
                 style={
                     !isDragging
@@ -371,6 +389,9 @@ const Window: React.FC<WindowProps> = (props) => {
 };
 
 const styles: StyleSheetCSS = {
+    container: {
+        position: 'relative',
+    },
     window: {
         backgroundColor: Colors.lightGray,
         position: 'absolute',
@@ -437,7 +458,6 @@ const styles: StyleSheetCSS = {
         flex: 1,
 
         position: 'relative',
-        // overflow: 'scroll',
         overflowX: 'hidden',
         backgroundColor: Colors.white,
     },
@@ -464,14 +484,10 @@ const styles: StyleSheetCSS = {
         marginLeft: 2,
     },
     windowTopButtons: {
-        // zIndex: 10000,
-
         alignItems: 'center',
     },
     windowHeader: {
         flex: 1,
-        // justifyContent: 'center',
-        // alignItems: 'center',
     },
     windowBarIcon: {
         paddingLeft: 4,
