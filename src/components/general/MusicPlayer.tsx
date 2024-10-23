@@ -184,6 +184,7 @@ const styles: StyleSheetCSS = {
         flexDirection: 'row',
         width: '100%',
         borderRadius: 4,
+        resize: 'none',
     },
     playerControls: {
         justifyContent: 'center',

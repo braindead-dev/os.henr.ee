@@ -70,7 +70,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     `;
 
     const SHUTDOWN_3 = `
-    Damn${_S}.${_S}.${_S}. ${_M} You really wanna shutdown this computer huh?${_L}
+    Dang${_S}.${_S}.${_S}. ${_M} You really wanna shutdown this computer huh?${_L}
     Well, I hate to break it to you,${_S} but its impossible to shutdown...${_S} It will always reboot.
     ${_L}
     |Goodbye!|
@@ -83,8 +83,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     const SHUTDOWN_4 = `
     Did you not read the last message?${_S} This computer will A${_F}L${_F}W${_F}A${_F}Y${_F}S${_F} reboot, the shutdown sequence is just here for show. It's not actually doing anything.
     ${_M}
-    I literally spent months on this website to give you other things to do.
-    You can play DOOM, Oregon Trail, Scrabble... but all you wanna do is shut the computer down.
+    Give it up. Go do something else. Hire me maybe (linkedin.com/in/henry00c)..... 
     ${_L}
     |Goodbye Again!|
     ${_M}
